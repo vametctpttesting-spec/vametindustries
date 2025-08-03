@@ -1,24 +1,23 @@
-/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class', // or 'media' or 'false'
   theme: {
     extend: {
-      fontFamily: {
-        sans: [
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'San Francisco',
-          'Helvetica Neue',
-          'Helvetica',
-          'Arial',
-          'sans-serif',
-        ],
+      colors: {
+        sky: colors.sky,
+        cyan: colors.cyan,
+        pink: colors.pink,
+        rose: colors.rose,
+        teal: colors.teal,
+        fuchsia: colors.fuchsia,
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 }
