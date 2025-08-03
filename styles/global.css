@@ -7,6 +7,38 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(to right, #ffffff 0%, #fefcf7 25%, #fdf9eb 50%, #fbf4d6 75%, #f9f0c4 100%);
+  min-height: 100vh;
+}
+
+.brand-color {
+  color: #223E8B;
+}
+
+.brand-color-hover:hover {
+  opacity: 0.75;
+}
+
+/* Fix scroll position for sticky header */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+/* Auto-scroll animation for customer logos */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 30s linear infinite;
+}
+
 #__next {
   display: flex;
   flex-direction: column;

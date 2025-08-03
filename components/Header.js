@@ -1,30 +1,29 @@
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
+import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
 
   return (
-    <header className="w-full sticky-nav">
-      <div className="flex flex-col flex-wrap max-w-5xl p-2.5 mx-auto md:flex-row">
-        <div className="flex flex-row items-center justify-between p-2 md:p-1">
-          <Link href="/">
-            <a className="mb-4 text-2xl font-medium text-black transition duration-300 hover:text-gray-300 dark:text-gray-300 dark:hover:text-white md:mb-0">
-              PLUTONIUM
+    <header className="w-full sticky top-0 z-50 shadow-sm" style={{background: 'linear-gradient(to right, #ffffff 0%, #fefcf7 30%, #fdf9eb 60%, #fbf4d6 80%, #f9f0c4 100%)'}}>
+      <div className="flex flex-col max-w-6xl mx-auto md:flex-row md:items-center">
+        <div className="flex items-center justify-between p-1 md:p-1">
+          <Link href="/#top">
+            <a className="flex-shrink-0">
+              <Image 
+                src="/images/site/vamet-header-logo.png" 
+                alt="Vamet Industries" 
+                width={250} 
+                height={80}
+                className="object-contain w-auto h-10 md:h-12"
+              />
             </a>
           </Link>
           <button
-            className="px-3 py-1 pb-4 ml-auto text-black outline-none dark:text-gray-300 md:hidden"
+            className="p-1 ml-4 text-black outline-none md:hidden"
             type="button"
-            aria-label="button"
+            aria-label="Toggle navigation menu"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <svg
@@ -46,77 +45,45 @@ export default function Header() {
         </div>
         <div
           className={
-            'md:flex flex-grow items-center' +
-            (navbarOpen ? ' flex' : ' hidden')
+            'md:flex md:items-center md:justify-end md:flex-1 md:pr-4' +
+            (navbarOpen ? ' block' : ' hidden')
           }
         >
-          <div className="flex flex-wrap items-center justify-center pt-1 pl-2 ml-1 space-x-8 md:space-x-16 md:mx-auto md:pl-14">
-            <Link href="/#features">
-              <a className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300">
-                Features
+          <nav className="flex flex-col space-y-1 p-1 md:flex-row md:space-y-0 md:space-x-8 md:p-0">
+            <Link href="/#top">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                Home
               </a>
             </Link>
-            <Link href="/#pricing">
-              <a className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300">
-                Pricing
+            <Link href="/#about">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                About Us
               </a>
             </Link>
-            <Link href="/404">
-              <a className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300">
-                Demo
+            <Link href="/#products">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                Products
               </a>
             </Link>
-          </div>
-          <button
-            aria-label="Toggle Dark Mode"
-            type="button"
-            className="w-10 h-10 p-3 ml-5 mr-0 bg-gray-200 rounded md:ml-0 md:mr-5 dark:bg-gray-800"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          >
-            {mounted && (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                stroke="currentColor"
-                className="w-4 h-4 text-gray-800 dark:text-gray-200"
-              >
-                {theme === 'dark' ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                ) : (
-                  <svg className="svg-icon" viewBox="0 0 20 20">
-                    <path
-                      fill="none"
-                      d="M10.544 8.717l1.166-.855 1.166.855-.467-1.399 1.012-.778h-1.244l-.467-1.243-.466 1.244H10l1.011.778-.467 1.398zm5.442.855l-.467 1.244h-1.244l1.011.777-.467 1.4 1.167-.855 1.165.855-.466-1.4 1.011-.777h-1.244l-.466-1.244zm-8.979-3.02c0-2.259.795-4.33 2.117-5.955A9.418 9.418 0 00.594 9.98c0 5.207 4.211 9.426 9.406 9.426 2.94 0 5.972-1.354 7.696-3.472-.289.026-.987.044-1.283.044-5.194.001-9.406-4.219-9.406-9.426M10 18.55c-4.715 0-8.551-3.845-8.551-8.57 0-3.783 2.407-6.999 5.842-8.131a10.32 10.32 0 00-1.139 4.703c0 5.368 4.125 9.788 9.365 10.245A9.733 9.733 0 0110 18.55m9.406-16.246h-1.71l-.642-1.71-.642 1.71h-1.71l1.39 1.069-.642 1.924 1.604-1.176 1.604 1.176-.642-1.924 1.39-1.069z"
-                    />
-                  </svg>
-                )}
-              </svg>
-            )}
-          </button>
-          <a
-            href="#"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="invisible dark:hover:border-gray-500 hover:shadow-md transition duration-300 mr-4 text-black border px-3 py-1.5 rounded dark:text-gray-300 md:visible"
-          >
-            Sign in
-          </a>
-          <a
-            href="#"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="invisible md:visible px-3 py-1.5 transition-colors hover:bg-gray-800 dark:hover:bg-gray-200 text-white dark:text-black bg-black dark:bg-white rounded"
-          >
-            Sign up
-          </a>
+            <Link href="/#customers">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                Clients
+              </a>
+            </Link>
+            <Link href="/#quality">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                Quality
+              </a>
+            </Link>
+            <Link href="/#contact">
+              <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
+                Contact
+              </a>
+            </Link>
+          </nav>
         </div>
       </div>
+      <div className="border-b border-gray-300"></div>
     </header>
   )
 }
