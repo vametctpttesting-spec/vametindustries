@@ -9,13 +9,19 @@ export default function Features() {
         </h1>
         <div className="max-w-4xl mx-auto text-center">
           <p className="mb-6 text-lg text-black leading-relaxed">
-            Vamet make CTs and PTs have Zero Failures since our inception. We are the most sought after brand in the field of Instrument Transformers. Our products have gained a unique brand name that has set a benchmark for reliable and long term working/performance to the system conditions.
+            Vamet make CTs and PTs have Zero Failures since our inception. We
+            are the most sought after brand in the field of Instrument
+            Transformers. Our products have gained a unique brand name that has
+            set a benchmark for reliable and long term working/performance to
+            the system conditions.
           </p>
           <p className="text-lg text-black leading-relaxed">
-            Being a Customer centric and Quality driven organization, we keenly listen to our customers' product requirements and supply them the most technically viable and reliable products.
+            Being a Customer centric and Quality driven organization, we keenly
+            listen to our customers&apos; product requirements and supply them
+            the most technically viable and reliable products.
           </p>
         </div>
-        
+
         {/* Vision, Mission, Core Values Section */}
         <div className="max-w-6xl mx-auto mt-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -32,10 +38,11 @@ export default function Features() {
               </div>
               <h3 className="mb-4 text-xl font-bold brand-color">Vision</h3>
               <p className="text-black leading-relaxed">
-                To emerge as a synonymous brand for quality Instrument Transformers in India.
+                To emerge as a synonymous brand for quality Instrument
+                Transformers in India.
               </p>
             </div>
-            
+
             {/* Mission */}
             <div className="text-center">
               <div className="flex justify-center mb-6">
@@ -52,7 +59,7 @@ export default function Features() {
                 Accurate Metering and Safeguarding Grid Infrastructure.
               </p>
             </div>
-            
+
             {/* Core Values */}
             <div className="text-center">
               <div className="flex justify-center mb-6">
@@ -64,7 +71,9 @@ export default function Features() {
                   className="w-32 h-32 object-contain"
                 />
               </div>
-              <h3 className="mb-4 text-xl font-bold brand-color">Core Values</h3>
+              <h3 className="mb-4 text-xl font-bold brand-color">
+                Core Values
+              </h3>
               <p className="text-black leading-relaxed">
                 Honesty, Reliability, Innovation, Customer Centric.
               </p>

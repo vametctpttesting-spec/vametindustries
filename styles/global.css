@@ -8,12 +8,19 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, #ffffff 0%, #fefcf7 25%, #fdf9eb 50%, #fbf4d6 75%, #f9f0c4 100%);
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #fefcf7 25%,
+    #fdf9eb 50%,
+    #fbf4d6 75%,
+    #f9f0c4 100%
+  );
   min-height: 100vh;
 }
 
 .brand-color {
-  color: #223E8B;
+  color: #223e8b;
 }
 
 .brand-color-hover:hover {

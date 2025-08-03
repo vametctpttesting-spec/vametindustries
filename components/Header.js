@@ -6,15 +6,21 @@ export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <header className="w-full sticky top-0 z-50 shadow-sm" style={{background: 'linear-gradient(to right, #ffffff 0%, #fefcf7 30%, #fdf9eb 60%, #fbf4d6 80%, #f9f0c4 100%)'}}>
+    <header
+      className="w-full sticky top-0 z-50 shadow-sm"
+      style={{
+        background:
+          'linear-gradient(to right, #ffffff 0%, #fefcf7 30%, #fdf9eb 60%, #fbf4d6 80%, #f9f0c4 100%)',
+      }}
+    >
       <div className="flex flex-col max-w-6xl mx-auto md:flex-row md:items-center">
         <div className="flex items-center justify-between p-1 md:p-1">
           <Link href="/#top">
             <a className="flex-shrink-0">
-              <Image 
-                src="/images/site/vamet-header-logo.png" 
-                alt="Vamet Industries" 
-                width={250} 
+              <Image
+                src="/images/site/vamet-header-logo.png"
+                alt="Vamet Industries"
+                width={250}
                 height={80}
                 className="object-contain w-auto h-10 md:h-12"
               />

@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 export default function Pricing() {
   const productTitles = [
-    "11kV Current Transformer",
-    "11kV Single Phase Potential Transformer", 
-    "11kV Current Transformer Dual Ratio",
-    "33kV Current Transformer",
-    "33kV Single Phase Potential Transformer",
-    "33kV Current Transformer Dual Ratio",
-    "33kV Current Transformer for Higher Current Ratio",
-    "11kV 3 Phase Potential Transformer",
-    "11 kV Semi-Indoor Metering Set",
-    "11 kV Indoor Metering Set"
+    '11kV Current Transformer',
+    '11kV Single Phase Potential Transformer',
+    '11kV Current Transformer Dual Ratio',
+    '33kV Current Transformer',
+    '33kV Single Phase Potential Transformer',
+    '33kV Current Transformer Dual Ratio',
+    '33kV Current Transformer for Higher Current Ratio',
+    '11kV 3 Phase Potential Transformer',
+    '11 kV Semi-Indoor Metering Set',
+    '11 kV Indoor Metering Set',
   ]
 
   return (
@@ -22,10 +22,13 @@ export default function Pricing() {
         </h1>
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-lg text-black leading-relaxed">
-            All our products are custom designed and manufactured to suit customers' individual and specific requirements. We have built a reputation of supplying well designed, robust, and reliable products to our customers.
+            All our products are custom designed and manufactured to suit
+            customers&apos; individual and specific requirements. We have built
+            a reputation of supplying well designed, robust, and reliable
+            products to our customers.
           </p>
         </div>
-        
+
         {/* Product Tiles Grid */}
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
