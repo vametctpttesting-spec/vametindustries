@@ -12,7 +12,18 @@ export default function TermsOfUse() {
         canonical="https://vametindustries.com/terms-of-use"
       />
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Terms of Use - Vamet Industries</title>
+        <link
+          rel="icon"
+          type="image/jpeg"
+          href="/images/site/vamet-favicon.jpg"
+        />
+        <link
+          rel="shortcut icon"
+          type="image/jpeg"
+          href="/images/site/vamet-favicon.jpg"
+        />
+        <link rel="apple-touch-icon" href="/images/site/vamet-favicon.jpg" />
       </Head>
       <Header />
 

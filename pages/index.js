@@ -12,28 +12,40 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <NextSeo
-        title="Plutonium"
-        description="Plutonium – where darkness meets the web."
-        canonical="https://plutonium.vercel.app/"
+        title="Vamet Industries - Leading Manufacturers of High Voltage Instrument Transformers"
+        description="Vamet Industries designs and manufactures High Voltage, Oil Impregnated Instrument Transformers (Current Transformers and Potential Transformers) for outdoor use."
+        canonical="https://vametindustries.com/"
         openGraph={{
-          url: 'https://plutonium.vercel.app/',
-          title: 'Plutonium',
-          description: 'Plutonium – where darkness meets the web.',
+          url: 'https://vametindustries.com/',
+          title: 'Vamet Industries - High Voltage Instrument Transformers',
+          description:
+            'Leading manufacturer of Current Transformers (CT) and Potential Transformers (PT) for outdoor use.',
           images: [
             {
-              url: 'blob:https://og-playground.vercel.app/8baff750-c782-4a04-b198-7ee3dd1e1974',
+              url: '/images/site/vamet-header-logo.png',
             },
           ],
-          site_name: 'Plutonium',
+          site_name: 'Vamet Industries',
         }}
         twitter={{
-          handle: '@saurishhh',
-          site: 'https://plutonium.vercel.app/',
+          handle: '@vametindustries',
+          site: 'https://vametindustries.com/',
           cardType: 'summary_large_image',
         }}
       />
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Vamet Industries</title>
+        <link
+          rel="icon"
+          type="image/jpeg"
+          href="/images/site/vamet-favicon.jpg"
+        />
+        <link
+          rel="shortcut icon"
+          type="image/jpeg"
+          href="/images/site/vamet-favicon.jpg"
+        />
+        <link rel="apple-touch-icon" href="/images/site/vamet-favicon.jpg" />
       </Head>
       <Header />
       <section id="top" className="relative">
