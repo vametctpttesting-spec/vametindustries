@@ -27,13 +27,13 @@ export default function Features() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Vision */}
             <div className="text-center">
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-2">
                 <Image
                   src="/images/site/vamet-vision.jpg"
                   alt="Vision"
                   width={200}
                   height={200}
-                  className="w-32 h-32 object-contain"
+                  className="w-24 h-24 md:w-32 md:h-32 object-contain"
                 />
               </div>
               <h3 className="mb-4 text-xl font-bold brand-color">Vision</h3>
@@ -45,13 +45,13 @@ export default function Features() {
 
             {/* Mission */}
             <div className="text-center">
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-2">
                 <Image
                   src="/images/site/vamet-mission.jpg"
                   alt="Mission"
                   width={200}
                   height={200}
-                  className="w-32 h-32 object-contain"
+                  className="w-24 h-24 md:w-32 md:h-32 object-contain"
                 />
               </div>
               <h3 className="mb-4 text-xl font-bold brand-color">Mission</h3>
@@ -62,13 +62,13 @@ export default function Features() {
 
             {/* Core Values */}
             <div className="text-center">
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-2">
                 <Image
                   src="/images/site/vamet-core-values.jpg"
                   alt="Core Values"
                   width={200}
                   height={200}
-                  className="w-32 h-32 object-contain"
+                  className="w-24 h-24 md:w-32 md:h-32 object-contain"
                 />
               </div>
               <h3 className="mb-4 text-xl font-bold brand-color">

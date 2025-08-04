@@ -27,6 +27,20 @@ body {
   opacity: 0.75;
 }
 
+/* Breadcrumb links - force black color */
+.breadcrumb-link {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb-link:hover {
+  color: #2563eb !important;
+}
+
+.breadcrumb-link:visited {
+  color: #000000 !important;
+}
+
 /* Fix scroll position for sticky header */
 section[id] {
   scroll-margin-top: 120px;

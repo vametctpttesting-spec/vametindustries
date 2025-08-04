@@ -112,7 +112,7 @@ export default function Home() {
       <section id="top" className="relative">
         <div className="px-4 pt-10 mx-auto max-w-7xl md:pt-16">
           <div className="w-full pb-5 mx-auto text-center md:w-11/12">
-            <h1 className="mb-3 text-5xl font-bold tracking-tight md:text-6xl brand-color">
+            <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-6xl brand-color">
               Leading Manufacturers of High Voltage Instrument Transformers
             </h1>
             <p className="max-w-4xl pt-5 mx-auto text-lg text-black md:text-lg">
@@ -535,7 +535,7 @@ export default function Home() {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -555,7 +555,7 @@ export default function Home() {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   placeholder="Enter your email address"
                 />
               </div>
@@ -574,7 +574,7 @@ export default function Home() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -594,7 +594,7 @@ export default function Home() {
                   rows={6}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical"
+                  className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical"
                   placeholder="Enter your message..."
                 />
               </div>

@@ -38,13 +38,13 @@ export default function Pricing() {
                 {index === 0 ? (
                   <Link href="/products/11kv-current-transformer" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -54,13 +54,13 @@ export default function Pricing() {
                 ) : index === 1 ? (
                   <Link href="/products/11kv-potential-transformer" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -73,13 +73,13 @@ export default function Pricing() {
                     passHref
                   >
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -89,13 +89,13 @@ export default function Pricing() {
                 ) : index === 3 ? (
                   <Link href="/products/33kv-current-transformer" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -105,13 +105,13 @@ export default function Pricing() {
                 ) : index === 4 ? (
                   <Link href="/products/33kv-potential-transformer" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -124,13 +124,13 @@ export default function Pricing() {
                     passHref
                   >
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -143,13 +143,13 @@ export default function Pricing() {
                     passHref
                   >
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -162,13 +162,13 @@ export default function Pricing() {
                     passHref
                   >
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -178,13 +178,13 @@ export default function Pricing() {
                 ) : index === 8 ? (
                   <Link href="/products/11kv-semi-indoor-metering-set" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
@@ -194,13 +194,13 @@ export default function Pricing() {
                 ) : index === 9 ? (
                   <Link href="/products/11kv-indoor-metering-set" passHref>
                     <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                      <div className="relative h-64 p-4">
+                      <div className="relative h-64 p-4 overflow-hidden">
                         <Image
                           src={`/images/site/vamet-product-${index + 1}.jpg`}
                           alt={title}
                           width={400}
                           height={300}
-                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>

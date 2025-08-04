@@ -1,12 +1,31 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const navRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        navbarOpen
+      ) {
+        setNavbarOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [navbarOpen])
 
   return (
     <header
+      ref={navRef}
       className="w-full sticky top-0 z-50 shadow-sm"
       style={{
         background:
@@ -14,7 +33,7 @@ export default function Header() {
       }}
     >
       <div className="flex flex-col max-w-6xl mx-auto md:flex-row md:items-center">
-        <div className="flex items-center justify-between p-1 md:p-1">
+        <div className="flex items-center justify-between py-1 px-2 md:py-1 md:px-2">
           <Link href="/#top">
             <a className="flex-shrink-0">
               <Image
@@ -55,7 +74,7 @@ export default function Header() {
             (navbarOpen ? ' block' : ' hidden')
           }
         >
-          <nav className="flex flex-col space-y-1 p-1 md:flex-row md:space-y-0 md:space-x-8 md:p-0">
+          <nav className="flex flex-col space-y-1 py-1 px-2 md:flex-row md:space-y-0 md:space-x-6 md:py-0 md:px-0">
             <Link href="/#top">
               <a className="font-bold transition duration-300 brand-color brand-color-hover text-center md:text-left">
                 Home
