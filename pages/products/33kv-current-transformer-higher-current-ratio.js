@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-export default function CurrentTransformerDualRatio11kV() {
+export default function CurrentTransformerHigherCurrentRatio33kV() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -70,12 +70,14 @@ export default function CurrentTransformerDualRatio11kV() {
   return (
     <div className="min-h-screen">
       <NextSeo
-        title="11kV Current Transformer Dual Ratio - Vamet Industries"
-        description="High-quality 11kV Current Transformer with Dual Ratio capability for outdoor applications. Oil-filled, vacuum impregnated for metering and protection applications."
-        canonical="https://vametindustries.com/products/11kv-current-transformer-dual-ratio"
+        title="33kV Current Transformer for Higher Current Ratio - Vamet Industries"
+        description="High-quality 33kV Current Transformer designed for higher current ratios and outdoor applications. Oil-filled, vacuum impregnated for metering and protection applications."
+        canonical="https://vametindustries.com/products/33kv-current-transformer-higher-current-ratio"
       />
       <Head>
-        <title>11kV Current Transformer Dual Ratio - Vamet Industries</title>
+        <title>
+          33kV Current Transformer for Higher Current Ratio - Vamet Industries
+        </title>
         <link
           rel="icon"
           type="image/jpeg"
@@ -92,7 +94,7 @@ export default function CurrentTransformerDualRatio11kV() {
 
       <section className="py-12">
         <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-          {/* Breadcrumb*/}
+          {/* Breadcrumb */}
           <div className="mb-8">
             <nav className="flex" aria-label="Breadcrumb">
               <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -139,7 +141,7 @@ export default function CurrentTransformerDualRatio11kV() {
                       ></path>
                     </svg>
                     <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
-                      11kV Current Transformer Dual Ratio
+                      33kV Current Transformer for Higher Current Ratio
                     </span>
                   </div>
                 </li>
@@ -147,22 +149,22 @@ export default function CurrentTransformerDualRatio11kV() {
             </nav>
           </div>
 
-          {/* Product Header*/}
+          {/* Product Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold tracking-normal text-left md:text-4xl brand-color mb-4">
-              11kV Current Transformer Dual Ratio
+              33kV Current Transformer for Higher Current Ratio
             </h1>
             <p className="text-lg text-gray-600">
-              High-quality outdoor current transformer with dual ratio
-              capability for metering and protection applications
+              High-quality outdoor current transformer designed for higher
+              current ratios for metering and protection applications
             </p>
           </div>
 
-          {/* Product Content*/}
+          {/* Product Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Specifications Table*/}
+            {/* Specifications Table */}
             <div className="space-y-8">
-              {/* Basic Specifications*/}
+              {/* Basic Specifications */}
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h2 className="text-xl font-semibold mb-4 brand-color">
                   Product Specifications
@@ -196,20 +198,20 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           Rated System Voltage
                         </td>
-                        <td className="py-2 text-gray-600">11kV</td>
+                        <td className="py-2 text-gray-600">33 kV</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           Highest System Voltage
                         </td>
-                        <td className="py-2 text-gray-600">12kV</td>
+                        <td className="py-2 text-gray-600">36 kV</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           Rated Primary Current
                         </td>
                         <td className="py-2 text-gray-600">
-                          As per requirement
+                          Higher current ratios as per requirement
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -217,7 +219,7 @@ export default function CurrentTransformerDualRatio11kV() {
                           Rated Burden
                         </td>
                         <td className="py-2 text-gray-600">
-                          As per requirement
+                          Higher burden capacity as per requirement
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -225,7 +227,7 @@ export default function CurrentTransformerDualRatio11kV() {
                           Class of Accuracy
                         </td>
                         <td className="py-2 text-gray-600">
-                          As per requirement
+                          As per requirement for higher current applications
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -238,7 +240,7 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           Total Creepage of Insulator
                         </td>
-                        <td className="py-2 text-gray-600">300 mm minimum</td>
+                        <td className="py-2 text-gray-600">900 mm minimum</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -251,8 +253,8 @@ export default function CurrentTransformerDualRatio11kV() {
                           Special Feature
                         </td>
                         <td className="py-2 text-gray-600">
-                          Multi-Ratio arrangements by Primary reconnections and
-                          / or secondary taps
+                          Designed for higher current ratios with enhanced
+                          thermal capacity
                         </td>
                       </tr>
                     </tbody>
@@ -260,7 +262,7 @@ export default function CurrentTransformerDualRatio11kV() {
                 </div>
               </div>
 
-              {/* Detailed Technical Specifications*/}
+              {/* Detailed Technical Specifications */}
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h2 className="text-xl font-semibold mb-4 brand-color">
                   Detailed Technical Specifications
@@ -288,20 +290,20 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           3. Manufacturer&apos;s Designation
                         </td>
-                        <td className="py-2 text-gray-600">COD</td>
+                        <td className="py-2 text-gray-600">COF</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           4. Rated Voltage/Highest Voltage
                         </td>
-                        <td className="py-2 text-gray-600">11 kV / 12 kV*</td>
+                        <td className="py-2 text-gray-600">33 kV / 36 kV*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           5. Rated Primary Current
                         </td>
                         <td className="py-2 text-gray-600">
-                          As per spec Amps*
+                          Higher current range as per spec Amps*
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -309,42 +311,14 @@ export default function CurrentTransformerDualRatio11kV() {
                           6. Secondary Core details
                         </td>
                         <td className="py-2 text-gray-600">
-                          <div className="space-y-2">
-                            <div className="font-medium">
-                              a. Number of Cores: Two
+                          <div className="space-y-1">
+                            <div>a. Number of Cores: One or Two</div>
+                            <div>b. Rated Secondary Current: 1 or 5 Amp*</div>
+                            <div>
+                              c. Rated Output: Enhanced capacity as per spec VA*
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                              <div className="border border-gray-200 rounded p-2">
-                                <div className="font-medium text-center mb-2">
-                                  Core 1
-                                </div>
-                                <div className="space-y-1 text-sm">
-                                  <div>
-                                    b. Rated Secondary Current: 1 or 5 Amp*
-                                  </div>
-                                  <div>c. Rated Output: as per spec VA*</div>
-                                  <div>d. Class of accuracy: as per spec*</div>
-                                  <div>
-                                    e. Accuracy limit factor: as per spec*
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="border border-gray-200 rounded p-2">
-                                <div className="font-medium text-center mb-2">
-                                  Core 2
-                                </div>
-                                <div className="space-y-1 text-sm">
-                                  <div>
-                                    b. Rated Secondary Current: 1 or 5 Amp*
-                                  </div>
-                                  <div>c. Rated Output: as per spec VA*</div>
-                                  <div>d. Class of accuracy: as per spec*</div>
-                                  <div>
-                                    e. Accuracy limit factor: as per spec*
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                            <div>d. Class of accuracy: as per spec*</div>
+                            <div>e. Accuracy limit factor: as per spec*</div>
                           </div>
                         </td>
                       </tr>
@@ -360,7 +334,9 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           8. Short time thermal current & its duration
                         </td>
-                        <td className="py-2 text-gray-600">As per spec kA</td>
+                        <td className="py-2 text-gray-600">
+                          Enhanced thermal capacity as per spec kA
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -378,8 +354,8 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 text-gray-600">
                           <div className="space-y-1">
                             <div>
-                              a. Rated continuous thermal current: Same as rated
-                              primary current*
+                              a. Rated continuous thermal current: Same as
+                              higher rated primary current*
                             </div>
                             <div>
                               b. Temperature rise over ambient: Within limits
@@ -392,14 +368,14 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           11. Impulse withstand test voltage
                         </td>
-                        <td className="py-2 text-gray-600">75 kV(Peak)*</td>
+                        <td className="py-2 text-gray-600">170 kV(Peak)*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           12. One-minute power frequency dry/wet withstand test
                           voltage on primary
                         </td>
-                        <td className="py-2 text-gray-600">28 kV*</td>
+                        <td className="py-2 text-gray-600">70 kV*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -412,7 +388,7 @@ export default function CurrentTransformerDualRatio11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           14. Total creepage of insulator
                         </td>
-                        <td className="py-2 text-gray-600">300 mm minimum*</td>
+                        <td className="py-2 text-gray-600">900 mm minimum*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -425,14 +401,14 @@ export default function CurrentTransformerDualRatio11kV() {
                           16. Quantity of oil
                         </td>
                         <td className="py-2 text-gray-600">
-                          Approx. 12 Liters.
+                          Approx. 18 Liters (Enhanced for higher current).
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           17. Total weight
                         </td>
-                        <td className="py-2 text-gray-600">Approx. 50 Kgs</td>
+                        <td className="py-2 text-gray-600">Approx. 75 Kgs</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -466,28 +442,28 @@ export default function CurrentTransformerDualRatio11kV() {
               </div>
             </div>
 
-            {/* Product Image*/}
+            {/* Product Image */}
             <div className="lg:sticky lg:top-8">
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <div className="relative h-[500px] mb-4">
                   <Image
-                    src="/images/site/vamet-product-details-3.jpg"
-                    alt="11kV Current Transformer Dual Ratio"
+                    src="/images/site/vamet-product-details-7.jpg"
+                    alt="33kV Current Transformer for Higher Current Ratio"
                     layout="fill"
                     objectFit="contain"
                     className="rounded-lg"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-center brand-color mb-2">
-                  11kV Current Transformer Dual Ratio
+                  33kV Current Transformer for Higher Current Ratio
                 </h3>
                 <p className="text-sm text-gray-600 text-center">
-                  Outdoor Oil-Filled Current Transformer with Dual Ratio for
-                  Metering and Protection Applications
+                  Outdoor Oil-Filled Current Transformer designed for Higher
+                  Current Ratio Applications
                 </p>
               </div>
 
-              {/* Contact Information*/}
+              {/* Contact Information */}
               <div className="mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold brand-color mb-4">
                   Get a Quote
@@ -521,13 +497,13 @@ export default function CurrentTransformerDualRatio11kV() {
                 </div>
               </div>
 
-              {/* Send Message Section*/}
+              {/* Send Message Section */}
               <div className="mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold brand-color mb-4">
                   Send Message
                 </h3>
                 <form className="space-y-4" onSubmit={handleSubmit}>
-                  {/* Name Field*/}
+                  {/* Name Field */}
                   <div>
                     <label
                       htmlFor="name"
@@ -547,7 +523,7 @@ export default function CurrentTransformerDualRatio11kV() {
                     />
                   </div>
 
-                  {/* Email Field*/}
+                  {/* Email Field */}
                   <div>
                     <label
                       htmlFor="email"
@@ -567,7 +543,7 @@ export default function CurrentTransformerDualRatio11kV() {
                     />
                   </div>
 
-                  {/* Phone Number Field*/}
+                  {/* Phone Number Field */}
                   <div>
                     <label
                       htmlFor="phone"
@@ -586,7 +562,7 @@ export default function CurrentTransformerDualRatio11kV() {
                     />
                   </div>
 
-                  {/* Message Field*/}
+                  {/* Message Field */}
                   <div>
                     <label
                       htmlFor="message"
@@ -606,7 +582,7 @@ export default function CurrentTransformerDualRatio11kV() {
                     />
                   </div>
 
-                  {/* Submit Button*/}
+                  {/* Submit Button */}
                   <div className="text-center">
                     <button
                       type="submit"
@@ -640,7 +616,7 @@ export default function CurrentTransformerDualRatio11kV() {
                   </div>
                 </form>
 
-                {/* Toast Messages*/}
+                {/* Toast Messages */}
                 {submitStatus === 'success' && (
                   <div className="fixed top-4 right-4 z-50 p-4 bg-green-500 text-white rounded-lg shadow-lg flex items-center space-x-2 animate-pulse">
                     <svg

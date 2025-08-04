@@ -94,7 +94,7 @@ export default function PotentialTransformer11kV() {
 
       <section className="py-12">
         <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-          {/* Breadcrumb */}
+          {/* Breadcrumb*/}
           <div className="mb-8">
             <nav className="flex" aria-label="Breadcrumb">
               <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -149,7 +149,7 @@ export default function PotentialTransformer11kV() {
             </nav>
           </div>
 
-          {/* Product Header */}
+          {/* Product Header*/}
           <div className="mb-8">
             <h1 className="text-3xl font-bold tracking-normal text-left md:text-4xl brand-color mb-4">
               11kV Single Phase Potential Transformer
@@ -160,11 +160,11 @@ export default function PotentialTransformer11kV() {
             </p>
           </div>
 
-          {/* Product Content */}
+          {/* Product Content*/}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Specifications Table */}
+            {/* Specifications Table*/}
             <div className="space-y-8">
-              {/* Basic Specifications */}
+              {/* Basic Specifications*/}
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h2 className="text-xl font-semibold mb-4 brand-color">
                   Product Specifications
@@ -253,7 +253,7 @@ export default function PotentialTransformer11kV() {
                 </div>
               </div>
 
-              {/* Detailed Technical Specifications */}
+              {/* Detailed Technical Specifications*/}
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h2 className="text-xl font-semibold mb-4 brand-color">
                   Detailed Technical Specifications
@@ -281,13 +281,13 @@ export default function PotentialTransformer11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           3. Nature of service
                         </td>
-                        <td className="py-2 text-gray-600">Outdoor *</td>
+                        <td className="py-2 text-gray-600">Outdoor*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           4. Type of Cooling
                         </td>
-                        <td className="py-2 text-gray-600">ON *</td>
+                        <td className="py-2 text-gray-600">ON*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -322,13 +322,13 @@ export default function PotentialTransformer11kV() {
                         <td className="py-2 font-medium text-gray-700">
                           8. Rated Burden
                         </td>
-                        <td className="py-2 text-gray-600">As per spec VA *</td>
+                        <td className="py-2 text-gray-600">As per spec VA*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           9. Class of Accuracy
                         </td>
-                        <td className="py-2 text-gray-600">As per spec *</td>
+                        <td className="py-2 text-gray-600">As per spec*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -341,7 +341,7 @@ export default function PotentialTransformer11kV() {
                           11. Rated voltage factor and time
                         </td>
                         <td className="py-2 text-gray-600">
-                          1.2 continuous; 1.5 / 30 sec *
+                          1.2 continuous; 1.5 / 30 sec*
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -368,13 +368,13 @@ export default function PotentialTransformer11kV() {
                         <td className="py-2 text-gray-600">
                           <div className="space-y-1">
                             <div>
-                              a. Type: Outdoor, Glazed Porcelain to IS 5621. *
+                              a. Type: Outdoor, Glazed Porcelain to IS 5621.*
                             </div>
                             <div>
-                              b. Electrical characteristics: To IS 5621 *
+                              b. Electrical characteristics: To IS 5621*
                             </div>
                             <div>
-                              c. Total creepage distance: 300 mm minimum. *
+                              c. Total creepage distance: 300 mm minimum.*
                             </div>
                           </div>
                         </td>
@@ -385,7 +385,7 @@ export default function PotentialTransformer11kV() {
                           primary winding
                         </td>
                         <td className="py-2 text-gray-600">
-                          28 kV induced; 3 kV applied. *
+                          28 kV induced; 3 kV applied.*
                         </td>
                       </tr>
                       <tr className="border-b border-gray-100">
@@ -393,14 +393,14 @@ export default function PotentialTransformer11kV() {
                           16. One-minute power frequency withstand test on
                           secondary winding
                         </td>
-                        <td className="py-2 text-gray-600">3 kV. *</td>
+                        <td className="py-2 text-gray-600">3 kV.*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
                           17. High voltage impulse withstand test on primary
                           windings
                         </td>
-                        <td className="py-2 text-gray-600">75 kV. *</td>
+                        <td className="py-2 text-gray-600">75 kV.*</td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2 font-medium text-gray-700">
@@ -408,7 +408,7 @@ export default function PotentialTransformer11kV() {
                         </td>
                         <td className="py-2 text-gray-600">
                           <div className="space-y-1">
-                            <div>a. Specification: To IS 335 *</div>
+                            <div>a. Specification: To IS 335*</div>
                             <div>
                               b. Quantity for First Filling: Approx. 15 Litres.
                             </div>
@@ -434,14 +434,14 @@ export default function PotentialTransformer11kV() {
                 </div>
                 <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                   <p className="text-sm text-yellow-800">
-                    <strong>Note:</strong> Only items marked with * are
+                    <strong>Note:</strong> Only items marked with* are
                     guaranteed. All others are indicative and subject to change.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Product Image */}
+            {/* Product Image*/}
             <div className="lg:sticky lg:top-8">
               <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <div className="relative h-[500px] mb-4">
@@ -462,7 +462,7 @@ export default function PotentialTransformer11kV() {
                 </p>
               </div>
 
-              {/* Contact Information */}
+              {/* Contact Information*/}
               <div className="mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold brand-color mb-4">
                   Get a Quote
@@ -496,19 +496,19 @@ export default function PotentialTransformer11kV() {
                 </div>
               </div>
 
-              {/* Send Message Section */}
+              {/* Send Message Section*/}
               <div className="mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold brand-color mb-4">
                   Send Message
                 </h3>
                 <form className="space-y-4" onSubmit={handleSubmit}>
-                  {/* Name Field */}
+                  {/* Name Field*/}
                   <div>
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      Name *
+                      Name*
                     </label>
                     <input
                       type="text"
@@ -522,13 +522,13 @@ export default function PotentialTransformer11kV() {
                     />
                   </div>
 
-                  {/* Email Field */}
+                  {/* Email Field*/}
                   <div>
                     <label
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      Email *
+                      Email*
                     </label>
                     <input
                       type="email"
@@ -542,7 +542,7 @@ export default function PotentialTransformer11kV() {
                     />
                   </div>
 
-                  {/* Phone Number Field */}
+                  {/* Phone Number Field*/}
                   <div>
                     <label
                       htmlFor="phone"
@@ -561,13 +561,13 @@ export default function PotentialTransformer11kV() {
                     />
                   </div>
 
-                  {/* Message Field */}
+                  {/* Message Field*/}
                   <div>
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      Message *
+                      Message*
                     </label>
                     <textarea
                       id="message"
@@ -581,7 +581,7 @@ export default function PotentialTransformer11kV() {
                     />
                   </div>
 
-                  {/* Submit Button */}
+                  {/* Submit Button*/}
                   <div className="text-center">
                     <button
                       type="submit"
@@ -615,7 +615,7 @@ export default function PotentialTransformer11kV() {
                   </div>
                 </form>
 
-                {/* Toast Messages */}
+                {/* Toast Messages*/}
                 {submitStatus === 'success' && (
                   <div className="fixed top-4 right-4 z-50 p-4 bg-green-500 text-white rounded-lg shadow-lg flex items-center space-x-2 animate-pulse">
                     <svg
