@@ -156,6 +156,57 @@ export default function Pricing() {
                       <div className="absolute inset-0 bg-gradient-to-t from-yellow-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                     </button>
                   </Link>
+                ) : index === 7 ? (
+                  <Link
+                    href="/products/11kv-3-phase-potential-transformer"
+                    passHref
+                  >
+                    <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
+                      <div className="relative h-64 p-4">
+                        <Image
+                          src={`/images/site/vamet-product-${index + 1}.jpg`}
+                          alt={title}
+                          width={400}
+                          height={300}
+                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-yellow-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </button>
+                  </Link>
+                ) : index === 8 ? (
+                  <Link href="/products/11kv-semi-indoor-metering-set" passHref>
+                    <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
+                      <div className="relative h-64 p-4">
+                        <Image
+                          src={`/images/site/vamet-product-${index + 1}.jpg`}
+                          alt={title}
+                          width={400}
+                          height={300}
+                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-yellow-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </button>
+                  </Link>
+                ) : index === 9 ? (
+                  <Link href="/products/11kv-indoor-metering-set" passHref>
+                    <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
+                      <div className="relative h-64 p-4">
+                        <Image
+                          src={`/images/site/vamet-product-${index + 1}.jpg`}
+                          alt={title}
+                          width={400}
+                          height={300}
+                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-yellow-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </button>
+                  </Link>
                 ) : (
                   <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
                     <div className="relative h-64 p-4">
