@@ -177,9 +177,10 @@ export default function TermsOfUse() {
               </p>
             </div>
 
-            <div className="bg-gray-100 rounded-lg p-6 border border-gray-300">
+            <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
               <p className="text-sm text-gray-600 text-center">
-                <strong>Last Updated:</strong> July 2025
+                <strong className="brand-color">Last Updated:</strong>{' '}
+                <span className="brand-color font-bold">July 2025</span>
                 <br />
                 These Terms of Use may be updated from time to time. Please
                 check this page periodically for changes.

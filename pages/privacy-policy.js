@@ -179,11 +179,11 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold mb-4 brand-color">
                 Legal Action Notice
               </h2>
-              <p className="mb-4 text-red-600 font-semibold">
+              <p className="mb-4 font-semibold">
                 WARNING: Any unauthorized reproduction, distribution, or use of
                 content from this website may result in:
               </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2 text-red-600">
+              <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li>Civil action for damages under the Copyright Act, 1957</li>
                 <li>Criminal prosecution under applicable Indian laws</li>
                 <li>Injunctive relief to prevent further infringement</li>
@@ -217,9 +217,10 @@ export default function PrivacyPolicy() {
               </div>
             </div>
 
-            <div className="bg-gray-100 rounded-lg p-6 border border-gray-300">
+            <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
               <p className="text-sm text-gray-600 text-center">
-                <strong>Last Updated:</strong> July 2025
+                <strong className="brand-color">Last Updated:</strong>{' '}
+                <span className="brand-color font-bold">July 2025</span>
                 <br />
                 This Privacy Policy may be updated from time to time. Please
                 check this page periodically for changes.

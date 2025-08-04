@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { NextSeo } from 'next-seo'
+import { useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Sponsors from '../components/Sponsors'
@@ -9,6 +10,66 @@ import Features from '../components/Features'
 import Pricing from '../components/Pricing'
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState('')
+
+  const handleInputChange = e => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', phone: '', message: '' })
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('')
+        }, 5000)
+      } else {
+        setSubmitStatus('error')
+        console.error('Form submission error:', result.message)
+        // Auto-hide error message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('')
+        }, 5000)
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      console.error('Form submission error:', error)
+      // Auto-hide error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus('')
+      }, 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="min-h-screen">
       <NextSeo
@@ -156,71 +217,158 @@ export default function Home() {
           <h1 className="mb-8 text-2xl font-bold tracking-normal text-center md:leading-tight md:tracking-normal md:text-4xl brand-color">
             Quality
           </h1>
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-lg text-black leading-relaxed">
-              Our products, popularly known as &quot;Vamet make CTs and
-              PTs&quot;, are known for their impeccable quality and long life.
-              The fact that there were &apos;zero field failures&apos; for the
-              CTs and PTs that we have supplied so far, signifies the importance
-              of the quality measures that we follow in all our manufacturing
-              processes.
-            </p>
-          </div>
-
-          {/* Quality Tiles */}
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* Quality Images */}
+          <div className="max-w-6xl mx-auto mb-12">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-center">
-                <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                  <div className="relative h-64 p-4">
-                    <Image
-                      src="/images/site/vamet-quality-1.jpg"
-                      alt="Rigorous Testing"
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </button>
-                <h3 className="mt-4 text-lg font-semibold text-center brand-color px-2">
-                  Rigorous Testing
-                </h3>
-              </div>
-
-              <div className="text-center">
-                <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                  <div className="relative h-64 p-4">
-                    <Image
-                      src="/images/site/vamet-quality-2.jpg"
-                      alt="Meticulous Selection of Raw Material"
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </button>
-                <h3 className="mt-4 text-lg font-semibold text-center brand-color px-2">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/site/vamet-quality-2.jpg"
+                    alt="Meticulous Selection of Raw Material"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="mt-8 text-lg font-semibold text-center brand-color px-2">
                   Meticulous Selection of Raw Material
                 </h3>
               </div>
 
               <div className="text-center">
-                <button className="group relative bg-white hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full">
-                  <div className="relative h-64 p-4">
-                    <Image
-                      src="/images/site/vamet-quality-3.jpg"
-                      alt="Skilled Work Force"
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </button>
-                <h3 className="mt-4 text-lg font-semibold text-center brand-color px-2">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/site/vamet-quality-3.jpg"
+                    alt="Skilled Work Force"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="mt-8 text-lg font-semibold text-center brand-color px-2">
                   Skilled Work Force
                 </h3>
               </div>
             </div>
+          </div>
+
+          {/* Quality Content */}
+          <div className="max-w-4xl mx-auto text-left space-y-6">
+            <p className="text-lg text-black leading-relaxed">
+              Our reputation for quality products has been our USP since
+              inception. This is firmly backed by the fact that we have had zero
+              field failure rate since 1999.
+            </p>
+
+            <p className="text-lg text-black leading-relaxed">
+              We at Vamet Industries diligently choose raw materials conforming
+              to specifications which in turn imparts long life to our products.
+            </p>
+
+            <p className="text-lg text-black leading-relaxed">
+              Control measurements are carried out at crucial stages of
+              production for maintaining high level of quality standards, such
+              as
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-lg text-black">
+              <li>Magnetic Core Properties Test</li>
+              <li>Wire Insulation Quality Test</li>
+              <li>Dielectric Material Quality Test</li>
+              <li>Determination of Water Content in Transformer Oil</li>
+              <li>Galvanised Coating Thickness on Tanks</li>
+              <li>Leak Test</li>
+              <li>Measurement of Dielectric Loss Factor</li>
+            </ul>
+
+            <p className="text-lg text-black leading-relaxed">
+              The Factory is equipped with state-of- the art machineries for
+              manufacture of Instrument Transformers, such as
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-lg text-black">
+              <li>Annealing Furnace</li>
+              <li>Precision Winding Machine</li>
+              <li>High Vacuum Impregnation Plant</li>
+              <li>Oil Drying and Degassing Plant</li>
+              <li>Galvanised Coating Thickness on Tanks</li>
+              <li>Leak Test</li>
+              <li>Measurement of Dielectric Loss Factor</li>
+            </ul>
+
+            <p className="text-lg text-black leading-relaxed">
+              All our products are guaranteed against defective design,
+              materials or workmanship for a period of 12/18 months under the
+              terms of our standard contractual warranty clause.
+            </p>
+
+            <p className="text-lg text-black leading-relaxed">
+              In the unfortunate event of transit damages or in the unlikely
+              event of difficulty in operation, on-site repairs and services are
+              available. If not possible on-site, then service is always
+              available at the factory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testing Section */}
+      <section id="testing" className="py-6">
+        <div className="max-w-6xl px-4 py-3 mx-auto sm:px-6 lg:px-8">
+          <h1 className="mb-8 text-2xl font-bold tracking-normal text-center md:leading-tight md:tracking-normal md:text-4xl brand-color">
+            Testing
+          </h1>
+
+          {/* Testing Image */}
+          <div className="max-w-2xl mx-auto mb-12 text-center">
+            <div className="relative h-64">
+              <Image
+                src="/images/site/vamet-quality-1.jpg"
+                alt="Rigorous Testing"
+                width={400}
+                height={300}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h3 className="mt-8 text-lg font-semibold text-center brand-color px-2">
+              Rigorous Testing
+            </h3>
+          </div>
+
+          {/* Testing Content */}
+          <div className="max-w-4xl mx-auto text-left space-y-6">
+            <p className="text-lg text-black leading-relaxed">
+              The final step of our quality assurance plan comprises of several
+              routine tests being performed on Instrument Transformers, such as:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-lg text-black">
+              <li>
+                High Voltage Power Frequency Test on Primary and Secondary
+                Windings
+              </li>
+              <li>
+                Over-Voltage Inter-Turn Insulation Test for Current Transformers
+              </li>
+              <li>
+                High Frequency Induced Voltage Test for Potential Transformers
+              </li>
+              <li>Determination of Errors</li>
+              <li>Verification of Terminal Markings and Polarity</li>
+              <li>
+                Type Tests of Temperature Rise, Accuracy and Instrument Security
+              </li>
+              <li>
+                Type Tests for Short Time Current and Lightning Impulse Voltage
+                Withstand
+              </li>
+            </ul>
+
+            <p className="text-lg text-black leading-relaxed">
+              Factory certified comprehensive tests reports are generated for
+              each Instrument Transformer and provided to the customer along
+              with dispatch package.
+            </p>
           </div>
         </div>
       </section>
@@ -359,6 +507,167 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Send Message Section */}
+      <section id="send-message" className="py-6">
+        <div className="max-w-4xl px-4 py-3 mx-auto sm:px-6 lg:px-8">
+          <h1 className="mb-8 text-2xl font-bold tracking-normal text-center md:leading-tight md:tracking-normal md:text-4xl brand-color">
+            Send Message
+          </h1>
+
+          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              {/* Name Field */}
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  placeholder="Enter your email address"
+                />
+              </div>
+
+              {/* Phone Number Field */}
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+
+              {/* Message Field */}
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={6}
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-vertical"
+                  placeholder="Enter your message..."
+                />
+              </div>
+
+              {/* Submit Button */}
+              <div className="text-center">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting && (
+                    <svg
+                      className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                  )}
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </div>
+            </form>
+
+            {/* Toast Messages */}
+            {submitStatus === 'success' && (
+              <div className="fixed top-4 right-4 z-50 p-4 bg-green-500 text-white rounded-lg shadow-lg flex items-center space-x-2 animate-pulse">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span className="font-medium">Message sent successfully!</span>
+              </div>
+            )}
+            {submitStatus === 'error' && (
+              <div className="fixed top-4 right-4 z-50 p-4 bg-red-500 text-white rounded-lg shadow-lg flex items-center space-x-2 animate-pulse">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span className="font-medium">
+                  Failed to send message. Please try again.
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </section>
