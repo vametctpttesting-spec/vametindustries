@@ -8,14 +8,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #fefcf7 25%,
-    #fdf9eb 50%,
-    #fbf4d6 75%,
-    #f9f0c4 100%
-  );
+  background: #ffffff;
   min-height: 100vh;
 }
 
