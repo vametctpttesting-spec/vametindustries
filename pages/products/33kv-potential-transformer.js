@@ -436,8 +436,8 @@ export default function PotentialTransformer33kV() {
                     </tbody>
                   </table>
                 </div>
-                <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
-                  <p className="text-sm text-yellow-800">
+                <div className="mt-4 p-3 bg-gray-100 border border-gray-300 rounded-lg">
+                  <p className="text-sm text-gray-700">
                     <strong>Note:</strong> Only items marked with* are
                     guaranteed. All others are indicative and subject to change.
                   </p>
