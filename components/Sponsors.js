@@ -19,43 +19,57 @@ export default function Sponsors() {
           TSNPDCL for supplying Current Transformers(CT) and Potential
           Transformers (PT)
         </p>
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-4 mt-6">
-          <div className="flex justify-center col-span-1">
-            <Image
-              src="/images/site/vamet-vr-1.jpeg"
-              alt="APSPDCL Vendor Registration"
-              width={200}
-              height={120}
-              className="mt-6 h-16 w-auto object-contain transition duration-300 hover:scale-105 cursor-pointer"
-              onClick={() =>
-                handleImageClick('/images/site/vamet-vr-1-page.pdf')
-              }
-            />
-          </div>
-          <div className="flex justify-center col-span-1">
-            <Image
-              src="/images/site/vamet-vr-2.jpeg"
-              alt="APTRANSCO Vendor Registration"
-              width={200}
-              height={120}
-              className="mt-6 h-16 w-auto object-contain transition duration-300 hover:scale-105 cursor-pointer"
-              onClick={() =>
-                handleImageClick('/images/site/vamet-vr-2-page.pdf')
-              }
-            />
-          </div>
-          <div className="flex justify-center col-span-1">
-            <Image
-              src="/images/site/vamet-vr-3.jpeg"
-              alt="TSNPDCL Vendor Registration"
-              width={200}
-              height={120}
-              className="mt-6 h-16 w-auto object-contain transition duration-300 hover:scale-105 cursor-pointer"
-              onClick={() =>
-                handleImageClick('/images/site/vamet-vr-3-page.pdf')
-              }
-            />
-          </div>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-3 mt-6">
+          <button
+            className="group relative bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-gray-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full"
+            onClick={() => handleImageClick('/images/site/vamet-vr-1-page.pdf')}
+          >
+            <div className="relative h-48 p-4 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/images/site/vamet-vr-1.jpeg"
+                alt="APSPDCL Vendor Registration"
+                width={200}
+                height={120}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </button>
+
+          <button
+            className="group relative bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-gray-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full"
+            onClick={() => handleImageClick('/images/site/vamet-vr-2-page.pdf')}
+          >
+            <div className="relative h-48 p-4 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/images/site/vamet-vr-2.jpeg"
+                alt="APTRANSCO Vendor Registration"
+                width={200}
+                height={120}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </button>
+
+          <button
+            className="group relative bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-gray-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 border border-gray-200 w-full"
+            onClick={() => handleImageClick('/images/site/vamet-vr-3-page.pdf')}
+          >
+            <div className="relative h-48 p-4 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/images/site/vamet-vr-3.jpeg"
+                alt="TSNPDCL Vendor Registration"
+                width={200}
+                height={120}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-200/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </button>
         </div>
       </div>
     </section>
